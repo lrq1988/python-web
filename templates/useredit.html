@@ -1,0 +1,22 @@
+<div class="pageContent">
+	<form method="post" action="useredit" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
+		<div class="pageFormContent" layoutH="86">
+			<dl class="nowrap">
+				<label>id</label>
+				<input name="id" type="text" size="30" class="required" readOnly="true" value="{{user.id}}"/>
+			</dl>
+			<dl class="nowrap">
+				<label>uname</label>
+				<input name="uname" class="required" type="text" size="30" alt="" value="{{user.uname}}"  minlength="0" maxlength="20" class="required" />
+			</dl>
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+				<li>
+					<div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div>
+				</li>
+			</ul>
+		</div>
+	</form>
+</div>
