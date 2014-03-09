@@ -1,4 +1,3 @@
-
 from route import path
 import tornado.web
 import os
@@ -8,7 +7,7 @@ from tornado.options import define, options
 define("mysql_host", default="127.0.0.1:3306", help="db host")
 define("mysql_database", default="hello", help="db name")
 define("mysql_user", default="root", help="db user")
-define("mysql_password", default="1314lq", help="db password")
+define("mysql_password", default="", help="db password")
 
 db = torndb.Connection(
     host=options.mysql_host,
