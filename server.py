@@ -5,7 +5,7 @@ import sys
 
 from app import application
 
-PORT = 8080
+PORT = 8888
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
